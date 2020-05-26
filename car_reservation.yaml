@@ -5032,6 +5032,9 @@ definitions:
           reason: System exception from e-com backend.
           details: System Exception occurred during location search.Please check the
             log for details.
+  just_testing:
+    description: just_testing
+    type: object
 responses:
   view_reservation_v1_response_200:
     description: The following demonstrates an example of a successful request for
