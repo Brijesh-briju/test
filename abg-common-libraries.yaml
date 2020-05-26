@@ -10,6 +10,12 @@ info:
 paths:
   /v1: {}
 definitions:
+  age:
+    title: Age
+    description: Driver’s age. This might influence the rates. Will be superseded
+      by date of birth found in the profile provided in “membership_code”
+    type: number
+    example: 25
   code:
     description: ""
     type: string
@@ -1819,12 +1825,6 @@ definitions:
               title: Closing hour
               description: Closing hour slot in ISO 8601 format.
               example: 780
-  age:
-    title: Age
-    description: Driver’s age. This might influence the rates. Will be superseded
-      by date of birth found in the profile provided in “membership_code”
-    type: number
-    example: 25
 responses:
   response_400:
     description: 400 Bad Request is returned when the request could not be understood
